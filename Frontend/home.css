@@ -1,0 +1,143 @@
+/* ===== General Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body Styling ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 60px;
+}
+
+/* ===== Container Styling ===== */
+#container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* ===== Heading ===== */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* ===== Form Styling ===== */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+#addTaskButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#addTaskButton:hover {
+    background-color: #45a049;
+}
+
+/* ===== Task List Styling ===== */
+#taskList {
+    list-style: none;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eef3f7;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* ===== Task Text ===== */
+.task-item span {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+/* ===== Buttons in Tasks ===== */
+.task-item button {
+    margin-left: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.task-item button:hover {
+    transform: scale(1.05);
+}
+
+.edit-btn {
+    background-color: #007BFF;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #FF4136;
+    color: white;
+}
+.save-btn {
+    background-color: #007BFF;
+    color: white;
+}
+.edit-input {
+  padding: 8px 12px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 80%;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+  margin-right: 10px;
+}
+.cancel-btn {
+  background-color: #ddd;
+  color: #333;
+  padding: 6px 10px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cancel-btn:hover {
+  background-color: #bbb;
+}
+.todo-actions1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
